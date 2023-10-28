@@ -1,5 +1,7 @@
 # sarufi-africastalking-blueprint
 
+<samp>
+
 Sarufi Blueprint to easier the integration between Sarufi and Africas talking 2 way SMS Platform 
 
 It uses [africastalking](https://github.com/AfricasTalkingLtd/africastalking-python/) python SDK and FastAPI to implement a webhook that you're going to put on AT dashboard on a session of _incoming messages_. 
@@ -55,3 +57,4 @@ Software are never complete by the way so incase of any issues, feel free to ope
 ## Credits 
 
 All the credit to all contributors. 
+</samp>
