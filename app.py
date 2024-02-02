@@ -20,13 +20,12 @@ sms = africastalking.SMS
 
 app = FastAPI()
 
-@app.post("/sms")
+@app.post("/")
 async def form_data_endpoint(request: Request):
     form_data: FormData = await request.form()
-    text = form_data['text']
-    to = form_data['to']
-    from_number = form_data['from']
-    
+    text = form_data.get('text')
+    to = form_data.get('to')
+    from_number = form_data.get('from')
     logging.info(f"Message received from {from_number}")
     
     # Integrate Sarufi with sarufi here  and send the response to the user
